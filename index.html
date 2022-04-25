@@ -49,12 +49,12 @@
         </pre>
       </section>
       <section id="right">
-        <div id="addElementPanel"></div>
+        <div id="addElementBG"></div>
         <table id="addElementTable"></table>
         <table id="elements_table">
           <thead>
             <tr>
-              <td><h1>Form Elements</h1></td>
+              <th colspan="2"><h1>Form Elements</h1></th>
             </tr>
           </thead>
           <tr>
@@ -67,6 +67,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="button"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -82,6 +83,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="checkbox"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -94,25 +96,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="color"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Datalist-Input</td>
-            <td>
-              <input id="idatalist_input1" name="idatalist" list="idatalist1" />
-              <datalist id="idatalist1">
-                <option value="Option 1"></option>
-                <option value="Option 2"></option>
-                <option value="Option 3"></option>
-              </datalist>
-            </td>
-            <td>
-              <input
-                type="button"
-                value="+"
-                class="pushElement"
-                data-eltype="datalist-input"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -132,6 +116,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="datalist"
+                data-isinput="false"
               />
             </td>
           </tr>
@@ -144,6 +129,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="date"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -156,6 +142,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="datetime-local"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -170,6 +157,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="email"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -182,6 +170,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="file"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -194,6 +183,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="hidden"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -206,6 +196,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="month"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -220,6 +211,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="number"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -232,6 +224,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="password"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -247,6 +240,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="radio"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -259,6 +253,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="range"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -271,6 +266,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="reset"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -285,6 +281,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="search"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -303,6 +300,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="select"
+                data-isinput="false"
               />
             </td>
           </tr>
@@ -315,6 +313,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="submit"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -327,6 +326,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="tel"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -339,6 +339,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="text"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -351,6 +352,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="textarea"
+                data-isinput="false"
               />
             </td>
           </tr>
@@ -363,6 +365,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="time"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -377,6 +380,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="url"
+                data-isinput="true"
               />
             </td>
           </tr>
@@ -389,6 +393,7 @@
                 value="+"
                 class="pushElement"
                 data-eltype="week"
+                data-isinput="true"
               />
             </td>
           </tr>

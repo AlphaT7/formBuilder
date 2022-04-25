@@ -32,6 +32,7 @@ div {
 #left {
   position: relative;
   font-family: sans-serif;
+  overflow-y: scroll;
 }
 
 #center {
@@ -53,8 +54,12 @@ div {
   margin: 0 auto;
 }
 
+#addElementTable tr td {
+  color: #000;
+}
+
 #addElementPanel {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -64,7 +69,6 @@ div {
 }
 
 .panelTitle {
-  width: 100%;
   height: 50px;
   background: teal;
   font-size: 20pt;
@@ -77,6 +81,8 @@ div {
   position: absolute;
   left: 50%;
   top: 50%;
+  max-height: 90%;
+  overflow-y: scroll;
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 5px;
@@ -85,6 +91,15 @@ div {
   z-index: 2000;
 }
 
+#addElementTable tbody tr td:nth-child(odd) {
+  text-align: right;
+}
+
+#addElementTable tbody tr td:last-of-type {
+  text-align: center;
+}
+
+#addElementTable tbody tr,
 #addElementTable tbody tr td {
   padding: 5px;
 }
