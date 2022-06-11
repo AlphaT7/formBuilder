@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./prism.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!--<link rel="icon" type="image/x-icon" href="./favicon.ico" />-->
+    <title>Form Builder</title>
+  </head>
+  <body>
+    <section id="container">
+      <section id="left"></section>
+      <section id="center">
+        <pre
+          class="language-html line-numbers"
+          data-src="Form.html"
+          data-download-link
+          data-download-link-label="Download"
+        ><code><!--
+              <p>
+              <input type="button" value="button">
+                <input type="button" value="button">
+                <input type="button" value="button">
+              </p>
+              <p>
+                <input type="button" value="button">
+                <input type="button" value="button">
+                <input type="button" value="button">
+              </p>
+              <p>
+                <input type="button" value="button">
+                <input type="button" value="button">
+                <input type="button" value="button">
+              </p>
+              <p>
+                <input type="button" value="button">
+                <input type="button" value="button">
+                <input type="button" value="button">
+              </p>
+              <p>
+                <input type="button" value="button">
+                <input type="button" value="button">
+                <input type="button" value="button">
+              </p>
+          --></code>
+        </pre>
+      </section>
+      <section id="right">
+        <div id="addElementBG"></div>
+        <table id="addElementTable"></table>
+        <table id="elements_table">
+          <thead>
+            <tr>
+              <th colspan="2"><h1>Form Elements</h1></th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Button</td>
+            <td><input id="ibutton" type="button" value="Button" /></td>
+            <td>
+              <input
+                id="addButton"
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="button"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Check Box</td>
+            <td>
+              <input id="icheckbox" type="checkbox" />
+              <input id="icheckbox" type="checkbox" checked />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="checkbox"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Color Picker</td>
+            <td><input id="icolor" type="color" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="color"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Datalist</td>
+            <td>
+              <input id="idatalist_input2" name="idatalist" list="idatalist2" />
+              <datalist id="idatalist2">
+                <option value="Option 1"></option>
+                <option value="Option 2"></option>
+                <option value="Option 3"></option>
+              </datalist>
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="datalist"
+                data-isinput="false"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td><input id="idate" type="date" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="date"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Date Time Local</td>
+            <td><input id="idatetime" type="datetime-local" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="datetime-local"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input id="iemail" type="email" value="username@domain.com" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="email"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>File</td>
+            <td><input id="ifile" type="file" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="file"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Hidden</td>
+            <td><input id="ihidden" type="hidden" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="hidden"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Month</td>
+            <td><input id="imonth" type="month" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="month"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>
+              <input id="inumber" type="number" value="0123456789" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="number"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input id="ipassword" type="password" value="password" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="password"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Radio</td>
+            <td>
+              <input id="iradio" type="radio" />
+              <input id="iradio" type="radio" checked />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="radio"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td><input id="irange" type="range" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="range"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Reset</td>
+            <td><input id="ireset" type="reset" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="reset"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Search</td>
+            <td>
+              <input id="isearch" type="search" value="search" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="search"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Select</td>
+            <td>
+              <select id="iselect">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+              </select>
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="select"
+                data-isinput="false"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Submit</td>
+            <td><input id="isubmit" type="submit" value="Submit" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="submit"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Tel</td>
+            <td><input id="itel" type="tel" value="0123456789" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="tel"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><input id="itext" type="text" value="text" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="text"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Text Area</td>
+            <td><textarea id="itextarea" value="text"></textarea></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="textarea"
+                data-isinput="false"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td><input id="itime" type="time" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="time"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>URL</td>
+            <td>
+              <input id="iurl" type="url" value="http://www.domain.com" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="url"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Week</td>
+            <td><input id="iweek" type="week" /></td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                class="pushElement"
+                data-eltype="week"
+                data-isinput="true"
+              />
+            </td>
+          </tr>
+        </table>
+      </section>
+    </section>
+  </body>
+</html>

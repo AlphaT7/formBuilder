@@ -1,0 +1,5 @@
+docker run -dt \
+  --name FormBuilder \
+  --mount type=bind,source="E:\DockerVolumes\DockerVolume_FormBuilder",target=/app \
+  -p 3000:3000 \
+  winterswebs/formbuilder:latest

@@ -1,7 +1,5 @@
 FROM node:alpine
 RUN apk add git
-WORKDIR /app
-RUN cd /app
-RUN git clone https://github.com/AlphaT7/formBuilder.git .
-RUN npm install snowpack
-EXPOSE 8080
+RUN git config --global user.name "AlphaT7"
+RUN git config --global user.email " 7742643+AlphaT7@users.noreply.github.com"
+EXPOSE 3000
